@@ -19,6 +19,12 @@ export default {
 			this.$store.commit("closeMenu");
 		}
 	},
+	mounted() {
+        this.$store.commit(
+            "setProductsInCart",
+            this.$cookies.get("products") || {}
+        );
+    }
 };
 </script>
 

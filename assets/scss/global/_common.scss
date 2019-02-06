@@ -76,3 +76,21 @@
         line-height: 1.6;
     }
 }
+
+.seotext {
+    padding: 30px;
+    background: #f7f7f7;
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.pb-n {
+    padding-bottom: 0;
+}

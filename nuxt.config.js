@@ -33,7 +33,7 @@ module.exports = {
 		}
 	},
 	server: {
-		host: '192.168.1.60',
+		host: '192.168.1.234',
 		port: 2888
 	},
 	plugins: [
@@ -41,5 +41,8 @@ module.exports = {
 		{ src: '~/plugins/swiper', ssr: false },
 		{ src: '~/plugins/vue-yandex-maps', ssr: false },
 	],
+	modules: [
+		'cookie-universal-nuxt',
+	  ]
 }
 

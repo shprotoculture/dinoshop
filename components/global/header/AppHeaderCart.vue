@@ -3,13 +3,17 @@
         nuxt-link.header-cart__link(to="/cart")
             i.header-cart__icon.far.fa-shopping-cart
             span.header-cart__text Корзина
-            span.header-cart__counter (0)
+            span.header-cart__counter ({{cartItemsCounter}})
 </template>
 
 <script>
 export default {
-
-}
+    computed: {
+        cartItemsCounter() {
+            return Object.keys(this.$store.state.cart.productsInCart).length;
+        }
+    }
+};
 </script>
 
 <style lang="scss">

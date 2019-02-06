@@ -4,10 +4,14 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 import { header } from './header/index';
+import { catalog } from './catalog/index';
+import { cart } from './cart/index';
 
 const store = () => new Vuex.Store({
     modules: {
-        header
+        header,
+        catalog,
+        cart
     }
 });
 
